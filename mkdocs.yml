@@ -2,7 +2,7 @@ site_name: Debug Handbook
 site_description: 実務で使えるデバッグ力を身につけるためのハンズオン教材
 site_author: Osk0830
 
-docs_dir: .
+docs_dir: docs
 
 theme:
   name: material
@@ -24,177 +24,171 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
-exclude_docs: |
-  .git/
-  .github/
-  site/
-  _base/
-  MKDOCS_NAV_*.md
-
 nav:
-  - Home: README.md
+  - Home: index.md
+
   - Project:
-      - PROJECT: PROJECT.md
-      - Book Architecture: BOOK_ARCHITECTURE.md
-      - Style Guide: STYLE_GUIDE.md
-      - Contributing: CONTRIBUTING.md
-      - Roadmap: ROADMAP.md
-      - Changelog: CHANGELOG.md
+      - PROJECT: project/PROJECT.md
+      - Book Architecture: project/BOOK_ARCHITECTURE.md
+      - Style Guide: project/STYLE_GUIDE.md
+      - Contributing: project/CONTRIBUTING.md
+      - Roadmap: project/ROADMAP.md
+      - Changelog: project/CHANGELOG.md
 
   - Module01 CLI:
-      - Overview: docs/module01-cli/README.md
+      - Overview: module01-cli/README.md
       - Lessons:
-          - CLIとは: docs/module01-cli/lessons/lesson01-what-is-cli.md
-          - TerminalとShell: docs/module01-cli/lessons/lesson02-terminal-shell.md
-          - pwd: docs/module01-cli/lessons/lesson03-pwd.md
-          - ls: docs/module01-cli/lessons/lesson04-ls.md
-          - cd: docs/module01-cli/lessons/lesson05-cd.md
-          - 相対パスと絶対パス: docs/module01-cli/lessons/lesson06-path.md
-          - 環境変数とPATH: docs/module01-cli/lessons/lesson07-env-path.md
-          - 標準入出力: docs/module01-cli/lessons/lesson08-stdin-stdout-stderr.md
-          - リダイレクト: docs/module01-cli/lessons/lesson09-redirection.md
-          - パイプ: docs/module01-cli/lessons/lesson10-pipe.md
-          - 履歴と補完: docs/module01-cli/lessons/lesson11-history-completion.md
-          - コマンドの調べ方: docs/module01-cli/lessons/lesson12-help-man-which-type.md
-          - Docker内CLI: docs/module01-cli/lessons/lesson13-cli-in-docker.md
-          - 総復習: docs/module01-cli/lessons/lesson14-review.md
-      - Lab: docs/module01-cli/labs/lab01-cli-basics.md
-      - Exercises: docs/module01-cli/exercises/beginner.md
-      - Answers: docs/module01-cli/exercises/answers.md
-      - Cheatsheet: docs/module01-cli/cheatsheet.md
-      - FAQ: docs/module01-cli/faq.md
-      - Troubleshooting: docs/module01-cli/troubleshooting.md
-      - Resources: docs/module01-cli/resources.md
+          - CLIとは: module01-cli/lessons/lesson01-what-is-cli.md
+          - TerminalとShell: module01-cli/lessons/lesson02-terminal-shell.md
+          - pwd: module01-cli/lessons/lesson03-pwd.md
+          - ls: module01-cli/lessons/lesson04-ls.md
+          - cd: module01-cli/lessons/lesson05-cd.md
+          - 相対パスと絶対パス: module01-cli/lessons/lesson06-path.md
+          - 環境変数とPATH: module01-cli/lessons/lesson07-env-path.md
+          - 標準入出力: module01-cli/lessons/lesson08-stdin-stdout-stderr.md
+          - リダイレクト: module01-cli/lessons/lesson09-redirection.md
+          - パイプ: module01-cli/lessons/lesson10-pipe.md
+          - 履歴と補完: module01-cli/lessons/lesson11-history-completion.md
+          - コマンドの調べ方: module01-cli/lessons/lesson12-help-man-which-type.md
+          - Docker内CLI: module01-cli/lessons/lesson13-cli-in-docker.md
+          - 総復習: module01-cli/lessons/lesson14-review.md
+      - Lab: module01-cli/labs/lab01-cli-basics.md
+      - Exercises: module01-cli/exercises/beginner.md
+      - Answers: module01-cli/exercises/answers.md
+      - Cheatsheet: module01-cli/cheatsheet.md
+      - FAQ: module01-cli/faq.md
+      - Troubleshooting: module01-cli/troubleshooting.md
+      - Resources: module01-cli/resources.md
 
   - Module02 Linux:
-      - Overview: docs/module02-linux/README.md
-      - Cheatsheet: docs/module02-linux/cheatsheet.md
-      - FAQ: docs/module02-linux/faq.md
-      - Troubleshooting: docs/module02-linux/troubleshooting.md
-      - Resources: docs/module02-linux/resources.md
+      - Overview: module02-linux/README.md
+      - Cheatsheet: module02-linux/cheatsheet.md
+      - FAQ: module02-linux/faq.md
+      - Troubleshooting: module02-linux/troubleshooting.md
+      - Resources: module02-linux/resources.md
 
   - Module03 ripgrep / grep / find:
-      - Overview: docs/module03-ripgrep-find-grep/README.md
-      - Cheatsheet: docs/module03-ripgrep-find-grep/cheatsheet.md
-      - FAQ: docs/module03-ripgrep-find-grep/faq.md
-      - Troubleshooting: docs/module03-ripgrep-find-grep/troubleshooting.md
-      - Resources: docs/module03-ripgrep-find-grep/resources.md
+      - Overview: module03-ripgrep-find-grep/README.md
+      - Cheatsheet: module03-ripgrep-find-grep/cheatsheet.md
+      - FAQ: module03-ripgrep-find-grep/faq.md
+      - Troubleshooting: module03-ripgrep-find-grep/troubleshooting.md
+      - Resources: module03-ripgrep-find-grep/resources.md
 
   - Module04 HTTP:
-      - Overview: docs/module04-http/README.md
-      - Cheatsheet: docs/module04-http/cheatsheet.md
-      - FAQ: docs/module04-http/faq.md
-      - Troubleshooting: docs/module04-http/troubleshooting.md
-      - Resources: docs/module04-http/resources.md
+      - Overview: module04-http/README.md
+      - Cheatsheet: module04-http/cheatsheet.md
+      - FAQ: module04-http/faq.md
+      - Troubleshooting: module04-http/troubleshooting.md
+      - Resources: module04-http/resources.md
 
   - Module05 curl:
-      - Overview: docs/module05-curl/README.md
-      - Cheatsheet: docs/module05-curl/cheatsheet.md
-      - FAQ: docs/module05-curl/faq.md
-      - Troubleshooting: docs/module05-curl/troubleshooting.md
-      - Resources: docs/module05-curl/resources.md
+      - Overview: module05-curl/README.md
+      - Cheatsheet: module05-curl/cheatsheet.md
+      - FAQ: module05-curl/faq.md
+      - Troubleshooting: module05-curl/troubleshooting.md
+      - Resources: module05-curl/resources.md
 
   - Module06 Docker:
-      - Overview: docs/module06-docker/README.md
-      - Cheatsheet: docs/module06-docker/cheatsheet.md
-      - FAQ: docs/module06-docker/faq.md
-      - Troubleshooting: docs/module06-docker/troubleshooting.md
-      - Resources: docs/module06-docker/resources.md
+      - Overview: module06-docker/README.md
+      - Cheatsheet: module06-docker/cheatsheet.md
+      - FAQ: module06-docker/faq.md
+      - Troubleshooting: module06-docker/troubleshooting.md
+      - Resources: module06-docker/resources.md
 
   - Module07 PHP Debug:
-      - Overview: docs/module07-php/README.md
-      - Cheatsheet: docs/module07-php/cheatsheet.md
-      - FAQ: docs/module07-php/faq.md
-      - Troubleshooting: docs/module07-php/troubleshooting.md
-      - Resources: docs/module07-php/resources.md
+      - Overview: module07-php/README.md
+      - Cheatsheet: module07-php/cheatsheet.md
+      - FAQ: module07-php/faq.md
+      - Troubleshooting: module07-php/troubleshooting.md
+      - Resources: module07-php/resources.md
 
   - Module08 SQL:
-      - Overview: docs/module08-sql/README.md
-      - Cheatsheet: docs/module08-sql/cheatsheet.md
-      - FAQ: docs/module08-sql/faq.md
-      - Troubleshooting: docs/module08-sql/troubleshooting.md
-      - Resources: docs/module08-sql/resources.md
+      - Overview: module08-sql/README.md
+      - Cheatsheet: module08-sql/cheatsheet.md
+      - FAQ: module08-sql/faq.md
+      - Troubleshooting: module08-sql/troubleshooting.md
+      - Resources: module08-sql/resources.md
 
   - Module09 Git:
-      - Overview: docs/module09-git/README.md
-      - Cheatsheet: docs/module09-git/cheatsheet.md
-      - FAQ: docs/module09-git/faq.md
-      - Troubleshooting: docs/module09-git/troubleshooting.md
-      - Resources: docs/module09-git/resources.md
+      - Overview: module09-git/README.md
+      - Cheatsheet: module09-git/cheatsheet.md
+      - FAQ: module09-git/faq.md
+      - Troubleshooting: module09-git/troubleshooting.md
+      - Resources: module09-git/resources.md
 
   - Module10 VS Code / Xdebug:
-      - Overview: docs/module10-vscode-xdebug/README.md
-      - Cheatsheet: docs/module10-vscode-xdebug/cheatsheet.md
-      - FAQ: docs/module10-vscode-xdebug/faq.md
-      - Troubleshooting: docs/module10-vscode-xdebug/troubleshooting.md
-      - Resources: docs/module10-vscode-xdebug/resources.md
+      - Overview: module10-vscode-xdebug/README.md
+      - Cheatsheet: module10-vscode-xdebug/cheatsheet.md
+      - FAQ: module10-vscode-xdebug/faq.md
+      - Troubleshooting: module10-vscode-xdebug/troubleshooting.md
+      - Resources: module10-vscode-xdebug/resources.md
 
   - Module11 Debug Flow:
-      - Overview: docs/module11-debug-flow/README.md
-      - Cheatsheet: docs/module11-debug-flow/cheatsheet.md
-      - FAQ: docs/module11-debug-flow/faq.md
-      - Troubleshooting: docs/module11-debug-flow/troubleshooting.md
-      - Resources: docs/module11-debug-flow/resources.md
+      - Overview: module11-debug-flow/README.md
+      - Cheatsheet: module11-debug-flow/cheatsheet.md
+      - FAQ: module11-debug-flow/faq.md
+      - Troubleshooting: module11-debug-flow/troubleshooting.md
+      - Resources: module11-debug-flow/resources.md
 
   - Module12 WordPress:
-      - Overview: docs/module12-wordpress/README.md
-      - Cheatsheet: docs/module12-wordpress/cheatsheet.md
-      - FAQ: docs/module12-wordpress/faq.md
-      - Troubleshooting: docs/module12-wordpress/troubleshooting.md
-      - Resources: docs/module12-wordpress/resources.md
+      - Overview: module12-wordpress/README.md
+      - Cheatsheet: module12-wordpress/cheatsheet.md
+      - FAQ: module12-wordpress/faq.md
+      - Troubleshooting: module12-wordpress/troubleshooting.md
+      - Resources: module12-wordpress/resources.md
 
   - Module13 React / API:
-      - Overview: docs/module13-react-api/README.md
-      - Cheatsheet: docs/module13-react-api/cheatsheet.md
-      - FAQ: docs/module13-react-api/faq.md
-      - Troubleshooting: docs/module13-react-api/troubleshooting.md
-      - Resources: docs/module13-react-api/resources.md
+      - Overview: module13-react-api/README.md
+      - Cheatsheet: module13-react-api/cheatsheet.md
+      - FAQ: module13-react-api/faq.md
+      - Troubleshooting: module13-react-api/troubleshooting.md
+      - Resources: module13-react-api/resources.md
 
   - Module14 Web Server:
-      - Overview: docs/module14-web-server/README.md
-      - Cheatsheet: docs/module14-web-server/cheatsheet.md
-      - FAQ: docs/module14-web-server/faq.md
-      - Troubleshooting: docs/module14-web-server/troubleshooting.md
-      - Resources: docs/module14-web-server/resources.md
+      - Overview: module14-web-server/README.md
+      - Cheatsheet: module14-web-server/cheatsheet.md
+      - FAQ: module14-web-server/faq.md
+      - Troubleshooting: module14-web-server/troubleshooting.md
+      - Resources: module14-web-server/resources.md
 
   - Module15 Mail:
-      - Overview: docs/module15-mail/README.md
-      - Cheatsheet: docs/module15-mail/cheatsheet.md
-      - FAQ: docs/module15-mail/faq.md
-      - Troubleshooting: docs/module15-mail/troubleshooting.md
-      - Resources: docs/module15-mail/resources.md
+      - Overview: module15-mail/README.md
+      - Cheatsheet: module15-mail/cheatsheet.md
+      - FAQ: module15-mail/faq.md
+      - Troubleshooting: module15-mail/troubleshooting.md
+      - Resources: module15-mail/resources.md
 
   - Module16 Performance:
-      - Overview: docs/module16-performance/README.md
-      - Cheatsheet: docs/module16-performance/cheatsheet.md
-      - FAQ: docs/module16-performance/faq.md
-      - Troubleshooting: docs/module16-performance/troubleshooting.md
-      - Resources: docs/module16-performance/resources.md
+      - Overview: module16-performance/README.md
+      - Cheatsheet: module16-performance/cheatsheet.md
+      - FAQ: module16-performance/faq.md
+      - Troubleshooting: module16-performance/troubleshooting.md
+      - Resources: module16-performance/resources.md
 
   - Module17 Troubleshooting:
-      - Overview: docs/module17-troubleshooting/README.md
-      - Cheatsheet: docs/module17-troubleshooting/cheatsheet.md
-      - FAQ: docs/module17-troubleshooting/faq.md
-      - Troubleshooting: docs/module17-troubleshooting/troubleshooting.md
-      - Resources: docs/module17-troubleshooting/resources.md
+      - Overview: module17-troubleshooting/README.md
+      - Cheatsheet: module17-troubleshooting/cheatsheet.md
+      - FAQ: module17-troubleshooting/faq.md
+      - Troubleshooting: module17-troubleshooting/troubleshooting.md
+      - Resources: module17-troubleshooting/resources.md
 
   - Module18 Case Study:
-      - Overview: docs/module18-case-study/README.md
-      - Cheatsheet: docs/module18-case-study/cheatsheet.md
-      - FAQ: docs/module18-case-study/faq.md
-      - Troubleshooting: docs/module18-case-study/troubleshooting.md
-      - Resources: docs/module18-case-study/resources.md
+      - Overview: module18-case-study/README.md
+      - Cheatsheet: module18-case-study/cheatsheet.md
+      - FAQ: module18-case-study/faq.md
+      - Troubleshooting: module18-case-study/troubleshooting.md
+      - Resources: module18-case-study/resources.md
 
   - Module19 Debug Drills:
-      - Overview: docs/module19-debug-drills/README.md
-      - Cheatsheet: docs/module19-debug-drills/cheatsheet.md
-      - FAQ: docs/module19-debug-drills/faq.md
-      - Troubleshooting: docs/module19-debug-drills/troubleshooting.md
-      - Resources: docs/module19-debug-drills/resources.md
+      - Overview: module19-debug-drills/README.md
+      - Cheatsheet: module19-debug-drills/cheatsheet.md
+      - FAQ: module19-debug-drills/faq.md
+      - Troubleshooting: module19-debug-drills/troubleshooting.md
+      - Resources: module19-debug-drills/resources.md
 
   - Module20 Reference:
-      - Overview: docs/module20-reference/README.md
-      - Cheatsheet: docs/module20-reference/cheatsheet.md
-      - FAQ: docs/module20-reference/faq.md
-      - Troubleshooting: docs/module20-reference/troubleshooting.md
-      - Resources: docs/module20-reference/resources.md
+      - Overview: module20-reference/README.md
+      - Cheatsheet: module20-reference/cheatsheet.md
+      - FAQ: module20-reference/faq.md
+      - Troubleshooting: module20-reference/troubleshooting.md
+      - Resources: module20-reference/resources.md
