@@ -1,23 +1,17 @@
-# ROADMAP
+# Roadmap
 
-## v1.0
+Phase1
+- 設計
+- Module01完成
 
-- 20章分の骨組み作成
-- 各章にハンズオン・チェックリストを追加
-- GitHubで管理開始
+Phase2
+- Module02〜20
 
-## v2.0
+Phase3
+- MkDocs
+- 図解
+- PDF
 
-- 各章を完成版へ拡充
-- Mermaid図の追加
-- 公式リンク集の整備
-- 演習問題と解答の追加
-- 実務ケーススタディの拡張
-
-## v3.0
-
-- PDF化
-- Web版化
-- 全文検索
-- サンプルプロジェクト
-- 模擬案件・実技試験
+Phase4
+- 模擬案件
+- Debug Escape Room

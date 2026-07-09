@@ -1,0 +1,34 @@
+site_name: Debug Handbook
+theme:
+  name: material
+nav:
+  - Home: README.md
+  - Project:
+      - PROJECT: PROJECT.md
+      - Style Guide: STYLE_GUIDE.md
+      - Contributing: CONTRIBUTING.md
+      - Changelog: CHANGELOG.md
+  - Module01 CLI:
+      - Overview: docs/module01-cli/README.md
+      - Lessons:
+          - CLIとは: docs/module01-cli/lessons/lesson01-what-is-cli.md
+          - TerminalとShell: docs/module01-cli/lessons/lesson02-terminal-shell.md
+          - pwd: docs/module01-cli/lessons/lesson03-pwd.md
+          - ls: docs/module01-cli/lessons/lesson04-ls.md
+          - cd: docs/module01-cli/lessons/lesson05-cd.md
+          - 相対パスと絶対パス: docs/module01-cli/lessons/lesson06-path.md
+          - 環境変数とPATH: docs/module01-cli/lessons/lesson07-env-path.md
+          - 標準入出力: docs/module01-cli/lessons/lesson08-stdin-stdout-stderr.md
+          - リダイレクト: docs/module01-cli/lessons/lesson09-redirection.md
+          - パイプ: docs/module01-cli/lessons/lesson10-pipe.md
+          - 履歴と補完: docs/module01-cli/lessons/lesson11-history-completion.md
+          - コマンドの調べ方: docs/module01-cli/lessons/lesson12-help-man-which-type.md
+          - Docker内CLI: docs/module01-cli/lessons/lesson13-cli-in-docker.md
+          - 総復習: docs/module01-cli/lessons/lesson14-review.md
+      - Lab: docs/module01-cli/labs/lab01-cli-basics.md
+      - Exercises: docs/module01-cli/exercises/beginner.md
+      - Answers: docs/module01-cli/exercises/answers.md
+      - Cheatsheet: docs/module01-cli/cheatsheet.md
+      - FAQ: docs/module01-cli/faq.md
+      - Troubleshooting: docs/module01-cli/troubleshooting.md
+      - Resources: docs/module01-cli/resources.md

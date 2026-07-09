@@ -1,24 +1,22 @@
-# コマンド索引
-
-## CLI基礎
+# Module01 CLI チートシート
 
 ```bash
 pwd
 ls -lah
-cd
 cd ..
 cd -
+echo $SHELL
+echo $PATH
+which php
+type cd
 history
-which
-type
-man
 ```
 
-## 出力
+## リダイレクト
 
 ```bash
-command > file.txt
-command >> file.txt
+command > output.log
+command >> output.log
 command 2> error.log
 command > output.log 2>&1
 ```

@@ -1,62 +1,35 @@
 # Debug Handbook
 
-PHP / WordPress / React / Docker / SQL / Git / Xdebug を題材にした、実務デバッグ学習用ハンドブックです。
+> 実務で使えるデバッグ力を身につけるためのハンズオン教材
 
-## 目的
+## コンセプト
+- 実務ベース
+- 手を動かす
+- 推測ではなく証拠で判断する
+- PHP / WordPress / React / Docker を中心に学ぶ
 
-「なんとなく直す」から卒業し、HTTP・ログ・SQL・Git・デバッガなどの証拠を使って、原因を特定できる力を身につけます。
+## 学習フロー
 
-## 学習スタイル
+Learn → Try → Break → Debug → Review → Apply
 
-この教材は読むだけではなく、毎章で必ず手を動かします。
-
-- 読む
-- コマンドを打つ
-- 壊す
-- 直す
-- メモする
-- 復習する
-
-## ディレクトリ構成
-
-```text
-docs/        本編
-exercises/   演習・解答
-assets/      図解・スクリーンショット
-references/  用語集・リンク集・コマンド索引
-```
-
-## 推奨環境
-
-- macOS
-- VS Code
-- Docker Desktop
-- Git
-- curl
-- ripgrep
-- PHP / Composer
-- MySQL
-- Chrome DevTools
-
-## 章一覧
-
-1. CLI入門
-2. Linux基礎とファイル操作
-3. ripgrep / grep / find
-4. HTTP基礎
-5. curl完全攻略
-6. Docker / Docker Compose
-7. PHP / Composer
-8. MySQL / SQL
-9. Gitデバッグ
-10. VS Code / Xdebug
-11. 実践デバッグフロー
-12. WordPress
-13. React / API
-14. Nginx / Apache
-15. Mail / SMTP / MailHog
-16. パフォーマンス
-17. トラブルシュート
-18. ケーススタディ
-19. デバッグドリル
-20. チートシート
+## Module一覧
+01 CLI
+02 Linux
+03 ripgrep
+04 HTTP
+05 curl
+06 Docker
+07 PHP
+08 SQL
+09 Git
+10 Xdebug
+11 Debug Flow
+12 WordPress
+13 React/API
+14 Web Server
+15 Mail
+16 Performance
+17 Troubleshooting
+18 Case Study
+19 Debug Drills
+20 Reference
