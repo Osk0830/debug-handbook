@@ -192,3 +192,22 @@ nav:
       - FAQ: module20-reference/faq.md
       - Troubleshooting: module20-reference/troubleshooting.md
       - Resources: module20-reference/resources.md
+
+  - Module21 VS Code実践:
+      - Overview: module21-vscode/README.md
+      - Lessons 01-07:
+          - VS Codeとは: module21-vscode/lessons/lesson01-what-is-vscode.md
+          - インストールと初期設定: module21-vscode/lessons/lesson02-install-and-initial-settings.md
+          - 画面構成: module21-vscode/lessons/lesson03-ui-overview.md
+          - Command Palette: module21-vscode/lessons/lesson04-command-palette.md
+          - Explorer: module21-vscode/lessons/lesson05-explorer.md
+          - Search完全攻略 Part1: module21-vscode/lessons/lesson06-search-complete-guide-part1.md
+          - Search完全攻略 Part2: module21-vscode/lessons/lesson06-search-complete-guide-part2.md
+          - 正規表現検索: module21-vscode/lessons/lesson07-regex-search.md
+      - Lab01 SearchとTerminal: module21-vscode/labs/lab01-search-and-terminal.md
+      - Exercises: module21-vscode/exercises/beginner.md
+      - Answers: module21-vscode/exercises/answers.md
+      - Cheatsheet: module21-vscode/cheatsheet.md
+      - FAQ: module21-vscode/faq.md
+      - Troubleshooting: module21-vscode/troubleshooting.md
+      - Resources: module21-vscode/resources.md
