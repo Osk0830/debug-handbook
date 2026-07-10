@@ -1,262 +1,217 @@
+# Lesson06 Search完全攻略 Part2
 
-# Lesson06 Search 完全攻略（Part2）
+## ゴール
 
-> Module21 VS Code実践
+- Globパターンを組み合わせて検索対象を精密に指定できる
+- Search Editorで調査結果を残せる
+- 一括置換を安全に実施できる
+- VS Code Searchと`rg`を使い分けられる
 
-## このPartで学ぶこと
+## Globの基本
 
-- Globパターン
-- Regex検索
-- Match Case / Whole Word
-- Search Editor
-- Replaceの安全な使い方
-- ripgrepとの関係
+Globはファイル名やパスをパターンで指定する記法です。
 
----
+| パターン | 意味 |
+|---|---|
+| `*` | 同じ階層の任意文字列 |
+| `**` | 複数階層を含む任意パス |
+| `?` | 任意の1文字 |
+| `{a,b}` | aまたはb |
+| `[0-9]` | 指定範囲の1文字 |
 
-# Globとは
+## よく使うパターン
 
-Globは検索対象ファイルを絞るためのパターンです。
-
-## よく使う例
+すべてのPHPファイル:
 
 ```text
 **/*.php
 ```
 
-PHPのみ
+`src`配下すべて:
 
 ```text
 src/**
 ```
 
-src配下
-
-```text
-app/**/*.php
-```
-
-app配下のPHP
+Controllerだけ:
 
 ```text
 **/*Controller.php
 ```
 
-Controllerだけ
+JavaScriptとTypeScript系:
 
 ```text
-**/*Repository.php
+**/*.{js,jsx,ts,tsx}
 ```
 
-Repositoryだけ
-
----
-
-# Glob実務例
-
-WordPress
+テストファイル:
 
 ```text
-wp-content/themes/**
+**/*.{test,spec}.{js,jsx,ts,tsx}
 ```
 
-React
+## IncludeとExcludeの設計
+
+調査対象が明確ならIncludeを狭くします。
 
 ```text
-src/components/**
+app/Http/Controllers/**
 ```
 
-Laravel
+対象が広く、ノイズだけ分かっているならExcludeを使います。
 
 ```text
-app/Http/**
+**/vendor/**,**/node_modules/**,**/storage/**
 ```
 
----
+両方を使う例:
 
-# Regex検索
-
-検索欄右側の `.*` をONにすると正規表現検索になります。
-
-例
-
-```regex
-get[A-Z]\w+
+```text
+Include: app/**/*.php
+Exclude: app/Generated/**,app/Cache/**
 ```
 
-一致例
+## Search Editor
 
-```
-getUser
-getProfile
-getReserveData
-```
+通常のSearch結果はSide Barに表示されます。長い調査ではSearch Editorを使うと、結果をエディタとして保持できます。
 
----
+Command Palette:
 
-数字だけ探す
-
-```regex
-\d+
-```
-
-メールアドレス候補
-
-```regex
-[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}
-```
-
----
-
-# Match Case
-
-例
-
-検索
-
-```
-User
-```
-
-Match Case OFF
-
-```
-user
-USER
-User
-```
-
-全部一致。
-
-大文字小文字を区別したい調査ではONにします。
-
----
-
-# Whole Word
-
-検索
-
-```
-id
-```
-
-OFF
-
-```
-id
-user_id
-id_value
-```
-
-ON
-
-```
-id
-```
-
-だけ。
-
-変数名調査では非常に便利です。
-
----
-
-# Search Editor
-
-大量検索では Search Editor を使います。
-
-Command Palette
-
-```
+```text
 Search: Open New Search Editor
 ```
 
-検索結果をエディタとして保存できます。
+用途:
 
-メリット
+- 複数検索の結果を比較する
+- 調査対象を残したままコードを読む
+- 結果を保存してレビュー材料にする
+- 検索結果内をさらに検索する
 
-- 比較できる
-- メモを書ける
-- Git管理できる
+Search Editorに表示された結果は、元ファイルへのリンクとして利用できます。
 
----
+## 置換の安全手順
 
-# Replace
+一括置換は次の順番で行います。
 
-Replaceは必ず
-
-1. Search
-2. 件数確認
-3. Preview
-4. Replace
-
-の順で実施します。
-
-「Replace All」をいきなり押さないこと。
-
----
-
-# VS Codeとripgrep
-
-VS Codeの全文検索は高速検索エンジンを利用しています。
-
-CLIで確認したい場合
+1. Gitの作業ツリーを確認
+2. 検索だけ実行
+3. 対象件数とファイルを確認
+4. Include / Excludeを指定
+5. Replace Previewで差分確認
+6. 置換実行
+7. フォーマット、テスト、Git差分確認
 
 ```bash
-rg "register_post_type" .
+git status
+git diff --stat
 ```
 
-検索結果が大量ならCLI、
+### 危険な例
 
-コードを追うならVS Code、
+`color`を`themeColor`へ全体置換すると、次まで変わる可能性があります。
 
-という使い分けがおすすめです。
-
----
-
-# ケーススタディ
-
-現象
-
-```
-予約画面だけ500
+```text
+background-color
+border-color
+discoloration
 ```
 
-調査
+Whole Word、正規表現、対象ファイルの絞り込みを利用します。
 
-1. Searchで reserveConfirm
-2. Controllerを特定
-3. Service検索
-4. Repository検索
-5. Debugger停止
-6. Git Diff確認
+## Capture Groupを使った置換
 
----
+正規表現で一致部分を保持しながら置換できます。
 
-# ハンズオン
+検索:
 
-- Search Editorを開く
-- `Route::` を検索
-- Regexで `get[A-Z]\w+` を検索
-- `**/*Controller.php` に絞る
-- rgでも同じ検索を実行して結果を比較する
+```regex
+console\.log\((.+)\);
+```
 
----
+置換:
 
-# チェックリスト
+```text
+logger.debug($1);
+```
 
-- [ ] Globを書ける
-- [ ] Regex検索を使える
-- [ ] Whole Wordを説明できる
-- [ ] Search Editorを開ける
-- [ ] rgとの使い分けを説明できる
+`$1`は最初の括弧で捕捉した内容です。構文の入れ子や複数行には単純な正規表現が向かない場合があります。ASTベースのリファクタリングや言語機能を優先すべきケースもあります。
 
-Part3では
+## Preserve Case
 
-- Go to Definition
-- Peek
-- Symbol Search
-- Workspace Symbol
-- Call Hierarchy
-- Type Hierarchy
+置換時に大文字・小文字の形を維持する機能があります。ただし識別子の命名規則を完全に理解するものではないため、Previewを必ず確認します。
 
-を扱います。
+## VS Code Searchと`rg`
+
+VS Codeの検索は、コードを見ながら結果を移動するのに向いています。`rg`は結果の加工、件数集計、他コマンドとの連携に向いています。
+
+### VS Code向き
+
+- 一致箇所を順に開く
+- 前後コードを読む
+- 置換Previewを確認する
+- Search Editorに残す
+
+### `rg`向き
+
+```bash
+rg -n "register_post_type" .
+rg -l "TODO" src
+rg -c "console\.log" src
+rg "ERROR|WARN" logs/app.log
+```
+
+- `-n`: 行番号
+- `-l`: ファイル名だけ
+- `-c`: ファイルごとの件数
+
+## CLI結果をVS Codeで開く
+
+一致したファイルをVS Codeで開く例:
+
+```bash
+rg -l "deprecatedFunction" src | xargs code
+```
+
+ファイル名に空白が含まれる環境では、NULL区切りなど安全な方法を検討してください。
+
+特定ファイルの行番号を開く:
+
+```bash
+code -g src/app.ts:120:5
+```
+
+## 検索が遅いとき
+
+確認項目:
+
+- リポジトリルートより上を開いていないか
+- `node_modules`や`vendor`を含めていないか
+- ネットワークドライブ上ではないか
+- 巨大ログや生成物があるか
+- シンボリックリンクをたどっていないか
+
+検索対象を明示的に狭めることが最優先です。
+
+## ハンズオン
+
+1. `**/*.{js,ts}`をIncludeに指定して検索する
+2. `**/*.test.*`をExcludeへ追加する
+3. Search Editorを開き、結果を保持する
+4. 置換Previewだけを実行し、実際には置換しない
+5. 同じ検索を`rg -n`でも実行して結果を比較する
+
+## 確認問題
+
+1. `*`と`**`の違いは何ですか。
+2. 一括置換前にGit状態を確認する理由は何ですか。
+3. Search Editorが通常のSearch結果より便利な場面を1つ挙げてください。
+4. VS Code Searchより`rg`が向く作業を1つ挙げてください。
+
+## まとめ
+
+- Globで検索対象を正確に指定する
+- 長い調査はSearch Editorへ残す
+- 一括置換はPreview、テスト、Git差分までを1セットにする
+- 結果閲覧はVS Code、加工と集計は`rg`が得意

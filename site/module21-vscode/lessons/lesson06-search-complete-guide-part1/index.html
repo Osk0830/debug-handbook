@@ -27,7 +27,7 @@
     
     
       
-        <title>Search完全攻略 Part1 - Debug Handbook</title>
+        <title>Lesson06 Search完全攻略 Part1 - Debug Handbook</title>
       
     
     
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Search完全攻略 Part1
+              Lesson06 Search完全攻略 Part1
             
           </span>
         </div>
@@ -4945,6 +4945,68 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -4969,7 +5031,7 @@
   <span class="md-ellipsis">
     
   
-    Module21 VS Code実践
+    Module21 VS Code実践デバッグ
   
 
     
@@ -4991,82 +5053,13 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Module21 VS Code実践
+    Module21 VS Code実践デバッグ
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_23_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_23_2" id="__nav_23_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Lessons 01-07
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_23_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_23_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Lessons 01-07
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -5082,7 +5075,7 @@
   <span class="md-ellipsis">
     
   
-    VS Codeとは
+    Lesson01 VS Codeとは
   
 
     
@@ -5110,7 +5103,7 @@
   <span class="md-ellipsis">
     
   
-    インストールと初期設定
+    Lesson02 インストールと初期設定
   
 
     
@@ -5138,7 +5131,7 @@
   <span class="md-ellipsis">
     
   
-    画面構成
+    Lesson03 画面構成
   
 
     
@@ -5166,7 +5159,7 @@
   <span class="md-ellipsis">
     
   
-    Command Palette
+    Lesson04 Command Palette
   
 
     
@@ -5194,7 +5187,7 @@
   <span class="md-ellipsis">
     
   
-    Explorer
+    Lesson05 Explorer
   
 
     
@@ -5231,7 +5224,7 @@
   <span class="md-ellipsis">
     
   
-    Search完全攻略 Part1
+    Lesson06 Search完全攻略 Part1
   
 
     
@@ -5249,7 +5242,7 @@
   <span class="md-ellipsis">
     
   
-    Search完全攻略 Part1
+    Lesson06 Search完全攻略 Part1
   
 
     
@@ -5285,6 +5278,216 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searchはデバッグの入口
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search Viewを開く
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最初の検索語を選ぶ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="最初の検索語を選ぶ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        良い検索語
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ノイズが多い検索語
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        検索の連鎖
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#match-case-whole-word-regex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Match Case / Whole Word / Regex
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-to-include" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Files to include
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Files to include">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-to-exclude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Files to exclude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .gitignoreと検索除外
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search結果の読み方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務ケース1: WordPress
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-laravel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務ケース2: Laravel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務ケース3: React
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ハンズオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        確認問題
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        まとめ
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5308,7 +5511,7 @@
   <span class="md-ellipsis">
     
   
-    Search完全攻略 Part2
+    Lesson06 Search完全攻略 Part2
   
 
     
@@ -5336,7 +5539,7 @@
   <span class="md-ellipsis">
     
   
-    正規表現検索
+    Lesson07 正規表現検索
   
 
     
@@ -5350,9 +5553,645 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson08-problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson08 Problemsパネルでエラーを集約する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson09-outline-symbols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson09 Outlineとシンボル検索でコードを俯瞰する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson10-terminal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson10 統合Terminalで検証を回す
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson11-debugger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson11 Debugger基礎
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson12-launch-json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson12 launch.jsonを理解する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson13-tasks-json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson13 tasks.jsonで定型作業を自動化する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson14-settings-json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson14 settings.jsonを安全に管理する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson15-workspace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson15 Workspaceを理解する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson16-profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson16 Profilesで環境を分離する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson17-snippets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson17 Snippetsで安全に定型入力する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson18-extensions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson18 Extensionsを選定・管理する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson19-gitlens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson19 GitLensで変更理由を追う
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson20-error-lens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson20 Error Lensで診断を見逃さない
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson21-copilot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson21 GitHub Copilotをデバッグへ使う
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson22-continue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson22 Continueなど外部AI拡張を評価する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson23-ai-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson23 AI利用ガイドラインを作る
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson24-case-study-php/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson24 ケーススタディ: PHPの500エラーを追う
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson25-case-study-react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson25 ケーススタディ: Reactの表示不具合を追う
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson26-case-study-wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson26 ケーススタディ: WordPressの表示崩れを追う
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson27-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson27 VS Codeのパフォーマンスを改善する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson28-team-development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson28 チームでVS Code設定を運用する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson29-exercises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson29 総合演習
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson30-cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson30 VS Codeデバッグ・チートシート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -5393,6 +6232,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../labs/lab02-debug-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab02 総合デバッグ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../exercises/beginner/" class="md-nav__link">
         
   
@@ -5400,7 +6267,7 @@
   <span class="md-ellipsis">
     
   
-    Exercises
+    演習
   
 
     
@@ -5428,7 +6295,7 @@
   <span class="md-ellipsis">
     
   
-    Answers
+    解答
   
 
     
@@ -5598,6 +6465,216 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searchはデバッグの入口
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search Viewを開く
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最初の検索語を選ぶ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="最初の検索語を選ぶ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        良い検索語
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ノイズが多い検索語
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        検索の連鎖
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#match-case-whole-word-regex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Match Case / Whole Word / Regex
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-to-include" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Files to include
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Files to include">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-to-exclude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Files to exclude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .gitignoreと検索除外
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search結果の読み方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務ケース1: WordPress
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-laravel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務ケース2: Laravel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        実務ケース3: React
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ハンズオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        確認問題
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        まとめ
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5615,163 +6692,184 @@
 
 
 
-<h1 id="lesson06-search-part1">Lesson06 Search 完全攻略（Part1）<a class="headerlink" href="#lesson06-search-part1" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p><strong>Module21 VS Code実践</strong></p>
-</blockquote>
+<h1 id="lesson06-search-part1">Lesson06 Search完全攻略 Part1<a class="headerlink" href="#lesson06-search-part1" title="Permanent link">&para;</a></h1>
 <h2 id="_1">ゴール<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>このLessonでは VS Code の Search を使って、
-「コードを読む」のではなく「目的のコードへ最短で到達する」ための考え方を身につけます。</p>
-<p>このPartでは以下を扱います。</p>
 <ul>
-<li>Search View</li>
-<li>Explorerとの違い</li>
-<li>Include / Exclude</li>
-<li>大規模案件での検索戦略</li>
-<li>WordPress・React・PHP案件での検索例</li>
+<li>Search Viewでワークスペース全体を検索できる</li>
+<li>検索語を現象から組み立てられる</li>
+<li>Include / Excludeを使ってノイズを減らせる</li>
+<li>Explorerで順番に読むより速く目的のコードへ到達できる</li>
 </ul>
-<hr />
-<h1 id="search">なぜSearchが重要なのか<a class="headerlink" href="#search" title="Permanent link">&para;</a></h1>
-<p>初心者は Explorer を開いて順番にファイルを読もうとします。</p>
-<div class="highlight"><pre><span></span><code>index.php
- ↓
-require
- ↓
-include
- ↓
-また読む
+<h2 id="search">Searchはデバッグの入口<a class="headerlink" href="#search" title="Permanent link">&para;</a></h2>
+<p>未知のコードを最初から読むのは非効率です。実務では現象に含まれる手掛かりを検索し、関係箇所だけを読みます。</p>
+<div class="highlight"><pre><span></span><code>画面の文言
+URL
+エラーメッセージ
+API名
+CSSクラス
+関数名
+設定キー
 </code></pre></div>
-<p>実務ではほぼ逆です。</p>
-<div class="highlight"><pre><span></span><code>Search
- ↓
-候補抽出
- ↓
-絞り込み
- ↓
-該当ファイル
- ↓
-Debugger
+<p>これらは検索語になります。</p>
+<h2 id="search-view">Search Viewを開く<a class="headerlink" href="#search-view" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>macOS: Cmd + Shift + F
+Windows/Linux: Ctrl + Shift + F
 </code></pre></div>
-<p>検索はデバッグの入口です。</p>
-<hr />
-<h1 id="search-view">Search View<a class="headerlink" href="#search-view" title="Permanent link">&para;</a></h1>
-<p>macOS</p>
-<div class="highlight"><pre><span></span><code>⌘ + Shift + F
-</code></pre></div>
-<p>Windows</p>
-<div class="highlight"><pre><span></span><code>Ctrl + Shift + F
-</code></pre></div>
-<p>開くと</p>
+<p>主な項目:</p>
 <ul>
-<li>Search</li>
-<li>Replace</li>
-<li>Files to include</li>
-<li>Files to exclude</li>
-<li>Results</li>
+<li>Search: 検索文字列</li>
+<li>Replace: 置換文字列</li>
+<li>Files to include: 検索対象</li>
+<li>Files to exclude: 除外対象</li>
+<li>Results: 結果一覧</li>
 </ul>
-<p>が表示されます。</p>
-<hr />
-<h1 id="explorer">Explorerとの違い<a class="headerlink" href="#explorer" title="Permanent link">&para;</a></h1>
-<p>Explorer は</p>
-<p>「場所を知っている」</p>
-<p>ときに使います。</p>
-<p>Search は</p>
-<p>「場所を知らない」</p>
-<p>ときに使います。</p>
-<p>実務では</p>
-<p>Search → Explorer</p>
-<p>の順になることが圧倒的に多いです。</p>
-<hr />
-<h1 id="include">Include<a class="headerlink" href="#include" title="Permanent link">&para;</a></h1>
-<p>例</p>
+<h2 id="_2">最初の検索語を選ぶ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">良い検索語<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>エラー全文の特徴的な部分</li>
+<li>画面にしか出ない固有文言</li>
+<li>URLのパス</li>
+<li>APIエンドポイント</li>
+<li>設定キー</li>
+</ul>
+<h3 id="_4">ノイズが多い検索語<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>id
+name
+data
+error
+user
+</code></pre></div>
+<p>一般語は大量に一致します。まず固有語で位置を特定し、その周辺から関数名や変数名へ検索をつなげます。</p>
+<h2 id="_5">検索の連鎖<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>画面に「予約内容を確認できません」と表示された場合:</p>
+<div class="highlight"><pre><span></span><code>&quot;予約内容を確認できません&quot;
+  ↓
+メッセージを出している条件分岐
+  ↓
+呼び出しているAPI関数名
+  ↓
+API URL
+  ↓
+レスポンス処理
+</code></pre></div>
+<p>1回の検索で原因へ到達しようとせず、<strong>検索結果から次の検索語を得る</strong>のが実務的です。</p>
+<h2 id="match-case-whole-word-regex">Match Case / Whole Word / Regex<a class="headerlink" href="#match-case-whole-word-regex" title="Permanent link">&para;</a></h2>
+<p>検索欄右側の切り替え:</p>
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Match Case</td>
+<td>大文字・小文字を区別</td>
+</tr>
+<tr>
+<td>Match Whole Word</td>
+<td>単語単位で一致</td>
+</tr>
+<tr>
+<td>Use Regular Expression</td>
+<td>正規表現を使用</td>
+</tr>
+</tbody>
+</table>
+<p>例として<code>User</code>を検索すると、Match Caseが無効な場合は<code>user</code>や<code>USER</code>も候補になります。</p>
+<p><code>id</code>をWhole Wordで検索すると、<code>user_id</code>との一致を避けられる場合があります。ただし言語や単語境界の扱いにより結果は変わるため、結果を必ず確認します。</p>
+<h2 id="files-to-include">Files to include<a class="headerlink" href="#files-to-include" title="Permanent link">&para;</a></h2>
+<p>検索対象をGlobで絞ります。</p>
 <div class="highlight"><pre><span></span><code>src/**
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>app/**
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>components/**
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>**/*.php
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>**/*.ts
+<div class="highlight"><pre><span></span><code>**/*Controller.php
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>**/*.scss
+<p>複数指定:</p>
+<div class="highlight"><pre><span></span><code>**/*.php,**/*.js,**/*.ts
 </code></pre></div>
-<p>複数指定</p>
-<div class="highlight"><pre><span></span><code>**/*.php,**/*.js
+<h3 id="_6">実務例<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>WordPressテーマのみ:</p>
+<div class="highlight"><pre><span></span><code>wp-content/themes/my-theme/**
 </code></pre></div>
-<hr />
-<h1 id="exclude">Exclude<a class="headerlink" href="#exclude" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code>**/node_modules/**
+<p>LaravelのController:</p>
+<div class="highlight"><pre><span></span><code>app/Http/Controllers/**/*.php
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>vendor/**
+<p>Reactコンポーネント:</p>
+<div class="highlight"><pre><span></span><code>src/components/**/*.{js,jsx,ts,tsx}
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>dist/**
+<h2 id="files-to-exclude">Files to exclude<a class="headerlink" href="#files-to-exclude" title="Permanent link">&para;</a></h2>
+<p>依存物、生成物、キャッシュを除外します。</p>
+<div class="highlight"><pre><span></span><code>**/node_modules/**,**/vendor/**,**/dist/**,**/build/**,**/coverage/**
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>coverage/**
-</code></pre></div>
-<hr />
-<h1 id="include-exclude">Include + Exclude<a class="headerlink" href="#include-exclude" title="Permanent link">&para;</a></h1>
-<p>Include</p>
-<div class="highlight"><pre><span></span><code>app/**
-</code></pre></div>
-<p>Exclude</p>
-<div class="highlight"><pre><span></span><code>app/cache/**
-</code></pre></div>
-<p>不要な検索結果を減らせます。</p>
-<hr />
-<h1 id="wordpress">実案件例（WordPress）<a class="headerlink" href="#wordpress" title="Permanent link">&para;</a></h1>
-<p>まず</p>
+<p>検索結果が多すぎる場合、検索語を複雑にする前に対象範囲を見直します。</p>
+<h2 id="gitignore"><code>.gitignore</code>と検索除外<a class="headerlink" href="#gitignore" title="Permanent link">&para;</a></h2>
+<p>VS Code Searchは設定により<code>.gitignore</code>や<code>search.exclude</code>を利用します。検索結果に出ない場合は、検索欄の設定やWorkspace設定を確認します。</p>
+<p>一時的に除外設定を無視して検索する場合もありますが、巨大な依存フォルダを含めると検索が遅くなるため注意してください。</p>
+<h2 id="search_1">Search結果の読み方<a class="headerlink" href="#search_1" title="Permanent link">&para;</a></h2>
+<p>結果はファイル単位でまとまります。</p>
+<p>確認する順番:</p>
+<ol>
+<li>一致件数</li>
+<li>一致したファイル数</li>
+<li>パス</li>
+<li>前後のコード</li>
+<li>同じ語が定義と利用のどちらにあるか</li>
+</ol>
+<p>同名関数が複数ある場合、<code>src</code>、<code>tests</code>、<code>vendor</code>、<code>dist</code>などのパスを見て優先度を判断します。</p>
+<h2 id="1-wordpress">実務ケース1: WordPress<a class="headerlink" href="#1-wordpress" title="Permanent link">&para;</a></h2>
+<p>カスタム投稿タイプの定義を探す:</p>
 <div class="highlight"><pre><span></span><code>register_post_type(
 </code></pre></div>
-<p>検索。</p>
-<p>次に</p>
-<div class="highlight"><pre><span></span><code>register_taxonomy(
-</code></pre></div>
-<p>さらに</p>
+<p>フックを探す:</p>
 <div class="highlight"><pre><span></span><code>add_action(
 </code></pre></div>
-<p>これだけでサイト構造をかなり把握できます。</p>
-<hr />
-<h1 id="laravel">実案件例（Laravel）<a class="headerlink" href="#laravel" title="Permanent link">&para;</a></h1>
+<p>テンプレート階層の候補を絞る:</p>
+<div class="highlight"><pre><span></span><code>single-
+archive-
+</code></pre></div>
+<p>Include:</p>
+<div class="highlight"><pre><span></span><code>wp-content/themes/my-theme/**/*.php
+</code></pre></div>
+<h2 id="2-laravel">実務ケース2: Laravel<a class="headerlink" href="#2-laravel" title="Permanent link">&para;</a></h2>
+<p>URLからルートを探す:</p>
 <div class="highlight"><pre><span></span><code>Route::
 </code></pre></div>
-<p>↓</p>
-<div class="highlight"><pre><span></span><code>Controller
+<p>またはURLの一部:</p>
+<div class="highlight"><pre><span></span><code>/reservations
 </code></pre></div>
-<p>↓</p>
-<div class="highlight"><pre><span></span><code>Service
+<p>次にController名、Service名、Repository名へ検索をつなげます。</p>
+<h2 id="3-react">実務ケース3: React<a class="headerlink" href="#3-react" title="Permanent link">&para;</a></h2>
+<p>画面文言を検索し、コンポーネントを特定します。次にprops名、API関数、state更新箇所を追います。</p>
+<div class="highlight"><pre><span></span><code>予約内容
 </code></pre></div>
-<p>↓</p>
-<div class="highlight"><pre><span></span><code>Repository
+<p>Include:</p>
+<div class="highlight"><pre><span></span><code>src/**/*.{ts,tsx}
 </code></pre></div>
-<p>の順で追うと処理を理解しやすくなります。</p>
-<hr />
-<h1 id="_2">ハンズオン<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<h2 id="_7">ハンズオン<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>サンプルプロジェクトで次を実行してください。</p>
 <ol>
-<li>任意のプロジェクトを開く</li>
-<li><code>register_post_type(</code> または <code>Route::</code> を検索</li>
-<li>Include を <code>app/**</code> に限定</li>
-<li>Exclude に <code>vendor/**</code> を追加</li>
-<li>検索件数の変化を確認する</li>
+<li><code>TODO</code>を全体検索する</li>
+<li><code>src/**</code>だけに絞る</li>
+<li>テストファイルを除外する</li>
+<li>大文字・小文字を区別して検索する</li>
+<li>検索結果から別の識別子を選び、2回目の検索を行う</li>
 </ol>
-<hr />
-<h1 id="_3">チェックリスト<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
+<p>調査記録として、検索語、件数、次に選んだ検索語を書き残してください。</p>
+<h2 id="_8">確認問題<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ol>
+<li>一般語より固有文言を優先する理由は何ですか。</li>
+<li>Include / Excludeを使う主な目的は何ですか。</li>
+<li>1回の検索で原因が分からない場合、次に何をしますか。</li>
+</ol>
+<h2 id="_9">まとめ<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <ul>
-<li>[ ] Search View を開ける</li>
-<li>[ ] Include を使える</li>
-<li>[ ] Exclude を使える</li>
-<li>[ ] Explorerとの違いを説明できる</li>
-<li>[ ] Search→Debugger の流れを説明できる</li>
-</ul>
-<hr />
-<p>Part2では以下を扱います。</p>
-<ul>
-<li>Glob完全攻略</li>
-<li>Regex検索</li>
-<li>Search Editor</li>
-<li>Replace</li>
-<li>ripgrepとの関係</li>
-<li>実務ケーススタディ</li>
+<li>現象に含まれる固有情報を検索語へ変換する</li>
+<li>Searchから次のSearchへ連鎖させる</li>
+<li>Include / Excludeで検索対象を管理する</li>
+<li>件数だけでなくパスと前後コードを読む</li>
 </ul>
 
 

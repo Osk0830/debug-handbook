@@ -1,213 +1,210 @@
 site_name: Debug Handbook
 site_description: 実務で使えるデバッグ力を身につけるためのハンズオン教材
 site_author: Osk0830
-
 docs_dir: docs
-
 theme:
   name: material
   language: ja
   features:
-    - navigation.sections
-    - navigation.top
-    - navigation.indexes
-    - content.code.copy
-    - search.highlight
-    - search.suggest
-
+  - navigation.sections
+  - navigation.top
+  - navigation.indexes
+  - content.code.copy
+  - search.highlight
+  - search.suggest
 markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - tables
-  - fenced_code
-  - pymdownx.details
-  - pymdownx.superfences
-
+- admonition
+- toc:
+    permalink: true
+- tables
+- fenced_code
+- pymdownx.details
+- pymdownx.superfences
 nav:
-  - Home: index.md
-
-  - Project:
-      - PROJECT: project/PROJECT.md
-      - Book Architecture: project/BOOK_ARCHITECTURE.md
-      - Style Guide: project/STYLE_GUIDE.md
-      - Contributing: project/CONTRIBUTING.md
-      - Roadmap: project/ROADMAP.md
-      - Changelog: project/CHANGELOG.md
-
-  - Module01 CLI:
-      - Overview: module01-cli/README.md
-      - Lessons:
-          - CLIとは: module01-cli/lessons/lesson01-what-is-cli.md
-          - TerminalとShell: module01-cli/lessons/lesson02-terminal-shell.md
-          - pwd: module01-cli/lessons/lesson03-pwd.md
-          - ls: module01-cli/lessons/lesson04-ls.md
-          - cd: module01-cli/lessons/lesson05-cd.md
-          - 相対パスと絶対パス: module01-cli/lessons/lesson06-path.md
-          - 環境変数とPATH: module01-cli/lessons/lesson07-env-path.md
-          - 標準入出力: module01-cli/lessons/lesson08-stdin-stdout-stderr.md
-          - リダイレクト: module01-cli/lessons/lesson09-redirection.md
-          - パイプ: module01-cli/lessons/lesson10-pipe.md
-          - 履歴と補完: module01-cli/lessons/lesson11-history-completion.md
-          - コマンドの調べ方: module01-cli/lessons/lesson12-help-man-which-type.md
-          - Docker内CLI: module01-cli/lessons/lesson13-cli-in-docker.md
-          - 総復習: module01-cli/lessons/lesson14-review.md
-      - Lab: module01-cli/labs/lab01-cli-basics.md
-      - Exercises: module01-cli/exercises/beginner.md
-      - Answers: module01-cli/exercises/answers.md
-      - Cheatsheet: module01-cli/cheatsheet.md
-      - FAQ: module01-cli/faq.md
-      - Troubleshooting: module01-cli/troubleshooting.md
-      - Resources: module01-cli/resources.md
-
-  - Module02 Linux:
-      - Overview: module02-linux/README.md
-      - Cheatsheet: module02-linux/cheatsheet.md
-      - FAQ: module02-linux/faq.md
-      - Troubleshooting: module02-linux/troubleshooting.md
-      - Resources: module02-linux/resources.md
-
-  - Module03 ripgrep / grep / find:
-      - Overview: module03-ripgrep-find-grep/README.md
-      - Cheatsheet: module03-ripgrep-find-grep/cheatsheet.md
-      - FAQ: module03-ripgrep-find-grep/faq.md
-      - Troubleshooting: module03-ripgrep-find-grep/troubleshooting.md
-      - Resources: module03-ripgrep-find-grep/resources.md
-
-  - Module04 HTTP:
-      - Overview: module04-http/README.md
-      - Cheatsheet: module04-http/cheatsheet.md
-      - FAQ: module04-http/faq.md
-      - Troubleshooting: module04-http/troubleshooting.md
-      - Resources: module04-http/resources.md
-
-  - Module05 curl:
-      - Overview: module05-curl/README.md
-      - Cheatsheet: module05-curl/cheatsheet.md
-      - FAQ: module05-curl/faq.md
-      - Troubleshooting: module05-curl/troubleshooting.md
-      - Resources: module05-curl/resources.md
-
-  - Module06 Docker:
-      - Overview: module06-docker/README.md
-      - Cheatsheet: module06-docker/cheatsheet.md
-      - FAQ: module06-docker/faq.md
-      - Troubleshooting: module06-docker/troubleshooting.md
-      - Resources: module06-docker/resources.md
-
-  - Module07 PHP Debug:
-      - Overview: module07-php/README.md
-      - Cheatsheet: module07-php/cheatsheet.md
-      - FAQ: module07-php/faq.md
-      - Troubleshooting: module07-php/troubleshooting.md
-      - Resources: module07-php/resources.md
-
-  - Module08 SQL:
-      - Overview: module08-sql/README.md
-      - Cheatsheet: module08-sql/cheatsheet.md
-      - FAQ: module08-sql/faq.md
-      - Troubleshooting: module08-sql/troubleshooting.md
-      - Resources: module08-sql/resources.md
-
-  - Module09 Git:
-      - Overview: module09-git/README.md
-      - Cheatsheet: module09-git/cheatsheet.md
-      - FAQ: module09-git/faq.md
-      - Troubleshooting: module09-git/troubleshooting.md
-      - Resources: module09-git/resources.md
-
-  - Module10 VS Code / Xdebug:
-      - Overview: module10-vscode-xdebug/README.md
-      - Cheatsheet: module10-vscode-xdebug/cheatsheet.md
-      - FAQ: module10-vscode-xdebug/faq.md
-      - Troubleshooting: module10-vscode-xdebug/troubleshooting.md
-      - Resources: module10-vscode-xdebug/resources.md
-
-  - Module11 Debug Flow:
-      - Overview: module11-debug-flow/README.md
-      - Cheatsheet: module11-debug-flow/cheatsheet.md
-      - FAQ: module11-debug-flow/faq.md
-      - Troubleshooting: module11-debug-flow/troubleshooting.md
-      - Resources: module11-debug-flow/resources.md
-
-  - Module12 WordPress:
-      - Overview: module12-wordpress/README.md
-      - Cheatsheet: module12-wordpress/cheatsheet.md
-      - FAQ: module12-wordpress/faq.md
-      - Troubleshooting: module12-wordpress/troubleshooting.md
-      - Resources: module12-wordpress/resources.md
-
-  - Module13 React / API:
-      - Overview: module13-react-api/README.md
-      - Cheatsheet: module13-react-api/cheatsheet.md
-      - FAQ: module13-react-api/faq.md
-      - Troubleshooting: module13-react-api/troubleshooting.md
-      - Resources: module13-react-api/resources.md
-
-  - Module14 Web Server:
-      - Overview: module14-web-server/README.md
-      - Cheatsheet: module14-web-server/cheatsheet.md
-      - FAQ: module14-web-server/faq.md
-      - Troubleshooting: module14-web-server/troubleshooting.md
-      - Resources: module14-web-server/resources.md
-
-  - Module15 Mail:
-      - Overview: module15-mail/README.md
-      - Cheatsheet: module15-mail/cheatsheet.md
-      - FAQ: module15-mail/faq.md
-      - Troubleshooting: module15-mail/troubleshooting.md
-      - Resources: module15-mail/resources.md
-
-  - Module16 Performance:
-      - Overview: module16-performance/README.md
-      - Cheatsheet: module16-performance/cheatsheet.md
-      - FAQ: module16-performance/faq.md
-      - Troubleshooting: module16-performance/troubleshooting.md
-      - Resources: module16-performance/resources.md
-
-  - Module17 Troubleshooting:
-      - Overview: module17-troubleshooting/README.md
-      - Cheatsheet: module17-troubleshooting/cheatsheet.md
-      - FAQ: module17-troubleshooting/faq.md
-      - Troubleshooting: module17-troubleshooting/troubleshooting.md
-      - Resources: module17-troubleshooting/resources.md
-
-  - Module18 Case Study:
-      - Overview: module18-case-study/README.md
-      - Cheatsheet: module18-case-study/cheatsheet.md
-      - FAQ: module18-case-study/faq.md
-      - Troubleshooting: module18-case-study/troubleshooting.md
-      - Resources: module18-case-study/resources.md
-
-  - Module19 Debug Drills:
-      - Overview: module19-debug-drills/README.md
-      - Cheatsheet: module19-debug-drills/cheatsheet.md
-      - FAQ: module19-debug-drills/faq.md
-      - Troubleshooting: module19-debug-drills/troubleshooting.md
-      - Resources: module19-debug-drills/resources.md
-
-  - Module20 Reference:
-      - Overview: module20-reference/README.md
-      - Cheatsheet: module20-reference/cheatsheet.md
-      - FAQ: module20-reference/faq.md
-      - Troubleshooting: module20-reference/troubleshooting.md
-      - Resources: module20-reference/resources.md
-
-  - Module21 VS Code実践:
-      - Overview: module21-vscode/README.md
-      - Lessons 01-07:
-          - VS Codeとは: module21-vscode/lessons/lesson01-what-is-vscode.md
-          - インストールと初期設定: module21-vscode/lessons/lesson02-install-and-initial-settings.md
-          - 画面構成: module21-vscode/lessons/lesson03-ui-overview.md
-          - Command Palette: module21-vscode/lessons/lesson04-command-palette.md
-          - Explorer: module21-vscode/lessons/lesson05-explorer.md
-          - Search完全攻略 Part1: module21-vscode/lessons/lesson06-search-complete-guide-part1.md
-          - Search完全攻略 Part2: module21-vscode/lessons/lesson06-search-complete-guide-part2.md
-          - 正規表現検索: module21-vscode/lessons/lesson07-regex-search.md
-      - Lab01 SearchとTerminal: module21-vscode/labs/lab01-search-and-terminal.md
-      - Exercises: module21-vscode/exercises/beginner.md
-      - Answers: module21-vscode/exercises/answers.md
-      - Cheatsheet: module21-vscode/cheatsheet.md
-      - FAQ: module21-vscode/faq.md
-      - Troubleshooting: module21-vscode/troubleshooting.md
-      - Resources: module21-vscode/resources.md
+- Home: index.md
+- Project:
+  - PROJECT: project/PROJECT.md
+  - Book Architecture: project/BOOK_ARCHITECTURE.md
+  - Style Guide: project/STYLE_GUIDE.md
+  - Contributing: project/CONTRIBUTING.md
+  - Roadmap: project/ROADMAP.md
+  - Changelog: project/CHANGELOG.md
+- Module01 CLI:
+  - Overview: module01-cli/README.md
+  - Lessons:
+    - CLIとは: module01-cli/lessons/lesson01-what-is-cli.md
+    - TerminalとShell: module01-cli/lessons/lesson02-terminal-shell.md
+    - pwd: module01-cli/lessons/lesson03-pwd.md
+    - ls: module01-cli/lessons/lesson04-ls.md
+    - cd: module01-cli/lessons/lesson05-cd.md
+    - 相対パスと絶対パス: module01-cli/lessons/lesson06-path.md
+    - 環境変数とPATH: module01-cli/lessons/lesson07-env-path.md
+    - 標準入出力: module01-cli/lessons/lesson08-stdin-stdout-stderr.md
+    - リダイレクト: module01-cli/lessons/lesson09-redirection.md
+    - パイプ: module01-cli/lessons/lesson10-pipe.md
+    - 履歴と補完: module01-cli/lessons/lesson11-history-completion.md
+    - コマンドの調べ方: module01-cli/lessons/lesson12-help-man-which-type.md
+    - Docker内CLI: module01-cli/lessons/lesson13-cli-in-docker.md
+    - 総復習: module01-cli/lessons/lesson14-review.md
+  - Lab: module01-cli/labs/lab01-cli-basics.md
+  - Exercises: module01-cli/exercises/beginner.md
+  - Answers: module01-cli/exercises/answers.md
+  - Cheatsheet: module01-cli/cheatsheet.md
+  - FAQ: module01-cli/faq.md
+  - Troubleshooting: module01-cli/troubleshooting.md
+  - Resources: module01-cli/resources.md
+- Module02 Linux:
+  - Overview: module02-linux/README.md
+  - Cheatsheet: module02-linux/cheatsheet.md
+  - FAQ: module02-linux/faq.md
+  - Troubleshooting: module02-linux/troubleshooting.md
+  - Resources: module02-linux/resources.md
+- Module03 ripgrep / grep / find:
+  - Overview: module03-ripgrep-find-grep/README.md
+  - Cheatsheet: module03-ripgrep-find-grep/cheatsheet.md
+  - FAQ: module03-ripgrep-find-grep/faq.md
+  - Troubleshooting: module03-ripgrep-find-grep/troubleshooting.md
+  - Resources: module03-ripgrep-find-grep/resources.md
+- Module04 HTTP:
+  - Overview: module04-http/README.md
+  - Cheatsheet: module04-http/cheatsheet.md
+  - FAQ: module04-http/faq.md
+  - Troubleshooting: module04-http/troubleshooting.md
+  - Resources: module04-http/resources.md
+- Module05 curl:
+  - Overview: module05-curl/README.md
+  - Cheatsheet: module05-curl/cheatsheet.md
+  - FAQ: module05-curl/faq.md
+  - Troubleshooting: module05-curl/troubleshooting.md
+  - Resources: module05-curl/resources.md
+- Module06 Docker:
+  - Overview: module06-docker/README.md
+  - Cheatsheet: module06-docker/cheatsheet.md
+  - FAQ: module06-docker/faq.md
+  - Troubleshooting: module06-docker/troubleshooting.md
+  - Resources: module06-docker/resources.md
+- Module07 PHP Debug:
+  - Overview: module07-php/README.md
+  - Cheatsheet: module07-php/cheatsheet.md
+  - FAQ: module07-php/faq.md
+  - Troubleshooting: module07-php/troubleshooting.md
+  - Resources: module07-php/resources.md
+- Module08 SQL:
+  - Overview: module08-sql/README.md
+  - Cheatsheet: module08-sql/cheatsheet.md
+  - FAQ: module08-sql/faq.md
+  - Troubleshooting: module08-sql/troubleshooting.md
+  - Resources: module08-sql/resources.md
+- Module09 Git:
+  - Overview: module09-git/README.md
+  - Cheatsheet: module09-git/cheatsheet.md
+  - FAQ: module09-git/faq.md
+  - Troubleshooting: module09-git/troubleshooting.md
+  - Resources: module09-git/resources.md
+- Module10 VS Code / Xdebug:
+  - Overview: module10-vscode-xdebug/README.md
+  - Cheatsheet: module10-vscode-xdebug/cheatsheet.md
+  - FAQ: module10-vscode-xdebug/faq.md
+  - Troubleshooting: module10-vscode-xdebug/troubleshooting.md
+  - Resources: module10-vscode-xdebug/resources.md
+- Module11 Debug Flow:
+  - Overview: module11-debug-flow/README.md
+  - Cheatsheet: module11-debug-flow/cheatsheet.md
+  - FAQ: module11-debug-flow/faq.md
+  - Troubleshooting: module11-debug-flow/troubleshooting.md
+  - Resources: module11-debug-flow/resources.md
+- Module12 WordPress:
+  - Overview: module12-wordpress/README.md
+  - Cheatsheet: module12-wordpress/cheatsheet.md
+  - FAQ: module12-wordpress/faq.md
+  - Troubleshooting: module12-wordpress/troubleshooting.md
+  - Resources: module12-wordpress/resources.md
+- Module13 React / API:
+  - Overview: module13-react-api/README.md
+  - Cheatsheet: module13-react-api/cheatsheet.md
+  - FAQ: module13-react-api/faq.md
+  - Troubleshooting: module13-react-api/troubleshooting.md
+  - Resources: module13-react-api/resources.md
+- Module14 Web Server:
+  - Overview: module14-web-server/README.md
+  - Cheatsheet: module14-web-server/cheatsheet.md
+  - FAQ: module14-web-server/faq.md
+  - Troubleshooting: module14-web-server/troubleshooting.md
+  - Resources: module14-web-server/resources.md
+- Module15 Mail:
+  - Overview: module15-mail/README.md
+  - Cheatsheet: module15-mail/cheatsheet.md
+  - FAQ: module15-mail/faq.md
+  - Troubleshooting: module15-mail/troubleshooting.md
+  - Resources: module15-mail/resources.md
+- Module16 Performance:
+  - Overview: module16-performance/README.md
+  - Cheatsheet: module16-performance/cheatsheet.md
+  - FAQ: module16-performance/faq.md
+  - Troubleshooting: module16-performance/troubleshooting.md
+  - Resources: module16-performance/resources.md
+- Module17 Troubleshooting:
+  - Overview: module17-troubleshooting/README.md
+  - Cheatsheet: module17-troubleshooting/cheatsheet.md
+  - FAQ: module17-troubleshooting/faq.md
+  - Troubleshooting: module17-troubleshooting/troubleshooting.md
+  - Resources: module17-troubleshooting/resources.md
+- Module18 Case Study:
+  - Overview: module18-case-study/README.md
+  - Cheatsheet: module18-case-study/cheatsheet.md
+  - FAQ: module18-case-study/faq.md
+  - Troubleshooting: module18-case-study/troubleshooting.md
+  - Resources: module18-case-study/resources.md
+- Module19 Debug Drills:
+  - Overview: module19-debug-drills/README.md
+  - Cheatsheet: module19-debug-drills/cheatsheet.md
+  - FAQ: module19-debug-drills/faq.md
+  - Troubleshooting: module19-debug-drills/troubleshooting.md
+  - Resources: module19-debug-drills/resources.md
+- Module20 Reference:
+  - Overview: module20-reference/README.md
+  - Cheatsheet: module20-reference/cheatsheet.md
+  - FAQ: module20-reference/faq.md
+  - Troubleshooting: module20-reference/troubleshooting.md
+  - Resources: module20-reference/resources.md
+- Module21 VS Code実践デバッグ:
+  - 概要: module21-vscode/README.md
+  - Lesson01 VS Codeとは: module21-vscode/lessons/lesson01-what-is-vscode.md
+  - Lesson02 インストールと初期設定: module21-vscode/lessons/lesson02-install-and-initial-settings.md
+  - Lesson03 画面構成: module21-vscode/lessons/lesson03-ui-overview.md
+  - Lesson04 Command Palette: module21-vscode/lessons/lesson04-command-palette.md
+  - Lesson05 Explorer: module21-vscode/lessons/lesson05-explorer.md
+  - Lesson06 Search完全攻略 Part1: module21-vscode/lessons/lesson06-search-complete-guide-part1.md
+  - Lesson06 Search完全攻略 Part2: module21-vscode/lessons/lesson06-search-complete-guide-part2.md
+  - Lesson07 正規表現検索: module21-vscode/lessons/lesson07-regex-search.md
+  - Lesson08 Problemsパネルでエラーを集約する: module21-vscode/lessons/lesson08-problems.md
+  - Lesson09 Outlineとシンボル検索でコードを俯瞰する: module21-vscode/lessons/lesson09-outline-symbols.md
+  - Lesson10 統合Terminalで検証を回す: module21-vscode/lessons/lesson10-terminal.md
+  - Lesson11 Debugger基礎: module21-vscode/lessons/lesson11-debugger.md
+  - Lesson12 launch.jsonを理解する: module21-vscode/lessons/lesson12-launch-json.md
+  - Lesson13 tasks.jsonで定型作業を自動化する: module21-vscode/lessons/lesson13-tasks-json.md
+  - Lesson14 settings.jsonを安全に管理する: module21-vscode/lessons/lesson14-settings-json.md
+  - Lesson15 Workspaceを理解する: module21-vscode/lessons/lesson15-workspace.md
+  - Lesson16 Profilesで環境を分離する: module21-vscode/lessons/lesson16-profile.md
+  - Lesson17 Snippetsで安全に定型入力する: module21-vscode/lessons/lesson17-snippets.md
+  - Lesson18 Extensionsを選定・管理する: module21-vscode/lessons/lesson18-extensions.md
+  - Lesson19 GitLensで変更理由を追う: module21-vscode/lessons/lesson19-gitlens.md
+  - Lesson20 Error Lensで診断を見逃さない: module21-vscode/lessons/lesson20-error-lens.md
+  - Lesson21 GitHub Copilotをデバッグへ使う: module21-vscode/lessons/lesson21-copilot.md
+  - Lesson22 Continueなど外部AI拡張を評価する: module21-vscode/lessons/lesson22-continue.md
+  - Lesson23 AI利用ガイドラインを作る: module21-vscode/lessons/lesson23-ai-guidelines.md
+  - 'Lesson24 ケーススタディ: PHPの500エラーを追う': module21-vscode/lessons/lesson24-case-study-php.md
+  - 'Lesson25 ケーススタディ: Reactの表示不具合を追う': module21-vscode/lessons/lesson25-case-study-react.md
+  - 'Lesson26 ケーススタディ: WordPressの表示崩れを追う': module21-vscode/lessons/lesson26-case-study-wordpress.md
+  - Lesson27 VS Codeのパフォーマンスを改善する: module21-vscode/lessons/lesson27-performance.md
+  - Lesson28 チームでVS Code設定を運用する: module21-vscode/lessons/lesson28-team-development.md
+  - Lesson29 総合演習: module21-vscode/lessons/lesson29-exercises.md
+  - Lesson30 VS Codeデバッグ・チートシート: module21-vscode/lessons/lesson30-cheatsheet.md
+  - Lab01 SearchとTerminal: module21-vscode/labs/lab01-search-and-terminal.md
+  - Lab02 総合デバッグ: module21-vscode/labs/lab02-debug-workflow.md
+  - 演習: module21-vscode/exercises/beginner.md
+  - 解答: module21-vscode/exercises/answers.md
+  - Cheatsheet: module21-vscode/cheatsheet.md
+  - FAQ: module21-vscode/faq.md
+  - Troubleshooting: module21-vscode/troubleshooting.md
+  - Resources: module21-vscode/resources.md
