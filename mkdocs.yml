@@ -208,6 +208,104 @@ nav:
   - FAQ: module21-vscode/faq.md
   - Troubleshooting: module21-vscode/troubleshooting.md
   - Resources: module21-vscode/resources.md
+- Module22 Xdebug:
+  - 概要: module22-xdebug/README.md
+  - 22-01 Xdebugの仕組み: module22-xdebug/lessons/lesson01-xdebug-architecture.md
+  - 22-02 導入前の環境確認: module22-xdebug/lessons/lesson02-environment-check.md
+  - 22-03 ローカル環境へのインストール: module22-xdebug/lessons/lesson03-local-installation.md
+  - 22-04 Docker環境へのインストール: module22-xdebug/lessons/lesson04-docker-installation.md
+  - 22-05 Xdebug設定: module22-xdebug/lessons/lesson05-xdebug-configuration.md
+  - 22-06 VS Codeとlaunch.json: module22-xdebug/lessons/lesson06-vscode-launch-json.md
+  - 22-07 ブレークポイントと基本操作: module22-xdebug/lessons/lesson07-breakpoints-and-stepping.md
+  - 22-08 Variables・Watch・Debug Console: module22-xdebug/lessons/lesson08-variables-watch-console.md
+  - 22-09 Call Stackと処理経路: module22-xdebug/lessons/lesson09-call-stack.md
+  - 22-10 条件付きブレークポイント: module22-xdebug/lessons/lesson10-advanced-breakpoints.md
+  - 22-11 Webリクエストのデバッグ: module22-xdebug/lessons/lesson11-web-debugging.md
+  - 22-12 CLI・バッチ・テストのデバッグ: module22-xdebug/lessons/lesson12-cli-debugging.md
+  - 22-13 DockerとpathMappings: module22-xdebug/lessons/lesson13-path-mappings.md
+  - 22-14 WordPress・API・フォーム実践: module22-xdebug/lessons/lesson14-real-world-cases.md
+  - 22-15 ブレークポイントで止まらないとき: module22-xdebug/lessons/lesson15-debug-connection-troubleshooting.md
+  - 22-16 総合演習: module22-xdebug/lessons/lesson16-capstone.md
+  - Lab01 ローカルPHPをXdebugで停止する: module22-xdebug/labs/lab01-local-xdebug.md
+  - Lab02 Docker環境のXdebug接続を切り分ける: module22-xdebug/labs/lab02-docker-debug-workflow.md
+  - Module22 Exercise Answers: module22-xdebug/exercises/answers.md
+  - Module22 Beginner Exercises: module22-xdebug/exercises/beginner.md
+  - Cheatsheet: module22-xdebug/cheatsheet.md
+  - FAQ: module22-xdebug/faq.md
+  - Troubleshooting: module22-xdebug/troubleshooting.md
+  - Resources: module22-xdebug/resources.md
+- Module23 APIデバッグ:
+  - 概要: module23-api-debugging/README.md
+  - APIデバッグの全体像: module23-api-debugging/lessons/lesson01-api-debugging-overview.md
+  - HTTPリクエストとレスポンス: module23-api-debugging/lessons/lesson02-http-request-response.md
+  - curl基礎: module23-api-debugging/lessons/lesson03-curl-basics.md
+  - curlで通信を詳細観測する: module23-api-debugging/lessons/lesson04-curl-advanced-observation.md
+  - HTTPステータスコードの切り分け: module23-api-debugging/lessons/lesson05-status-codes.md
+  - ヘッダーとContent-Type: module23-api-debugging/lessons/lesson06-headers-content-types.md
+  - JSONデバッグ: module23-api-debugging/lessons/lesson07-json-debugging.md
+  - 認証・認可のデバッグ: module23-api-debugging/lessons/lesson08-authentication.md
+  - CORSとブラウザ固有問題: module23-api-debugging/lessons/lesson09-cors.md
+  - PostmanとVS Code REST Client: module23-api-debugging/lessons/lesson10-postman-rest-client.md
+  - PHPサーバー側のAPIデバッグ: module23-api-debugging/lessons/lesson11-php-server-side-debugging.md
+  - 外部API連携の切り分け: module23-api-debugging/lessons/lesson12-external-api-debugging.md
+  - Docker・Proxy・ネットワーク: module23-api-debugging/lessons/lesson13-docker-proxy-network.md
+  - タイムアウト・リトライ・Rate Limit: module23-api-debugging/lessons/lesson14-timeout-retry-rate-limit.md
+  - API障害の体系的トラブルシューティング: module23-api-debugging/lessons/lesson15-api-troubleshooting.md
+  - 総合演習: module23-api-debugging/lessons/lesson16-capstone.md
+  - Lab01 curlでAPI障害を再現する: module23-api-debugging/labs/lab01-curl-reproduction.md
+  - Lab02 認証・CORS・外部APIを切り分ける: module23-api-debugging/labs/lab02-auth-cors-upstream.md
+  - Module23 Exercise Answers: module23-api-debugging/exercises/answers.md
+  - Module23 Beginner Exercises: module23-api-debugging/exercises/beginner.md
+  - Cheatsheet: module23-api-debugging/cheatsheet.md
+  - FAQ: module23-api-debugging/faq.md
+  - Troubleshooting: module23-api-debugging/troubleshooting.md
+  - Resources: module23-api-debugging/resources.md
+- Module24 ログ解析:
+  - 概要: module24-log-analysis/README.md
+  - ログ解析の全体像: module24-log-analysis/lessons/lesson01-log-analysis-overview.md
+  - ログの場所と情報源: module24-log-analysis/lessons/lesson02-log-locations-and-sources.md
+  - tail・lessでログを読む: module24-log-analysis/lessons/lesson03-tail-less-follow.md
+  - grep・ripgrepで絞り込む: module24-log-analysis/lessons/lesson04-grep-ripgrep-search.md
+  - ログ形式を読み解く: module24-log-analysis/lessons/lesson05-log-format-reading.md
+  - 時刻・タイムゾーン・相関: module24-log-analysis/lessons/lesson06-time-timezone-correlation.md
+  - Request ID・Trace IDでログをつなぐ: module24-log-analysis/lessons/lesson07-request-id-trace-id.md
+  - awk・sed・cut・sort・uniq: module24-log-analysis/lessons/lesson08-awk-sed-cut-sort-uniq.md
+  - jqで構造化ログを解析する: module24-log-analysis/lessons/lesson09-jq-structured-logs.md
+  - PHP・アプリケーションログ: module24-log-analysis/lessons/lesson10-php-application-logs.md
+  - Nginx・Apacheログ解析: module24-log-analysis/lessons/lesson11-nginx-apache-logs.md
+  - Docker・journalctl・システムログ: module24-log-analysis/lessons/lesson12-docker-journalctl-system-logs.md
+  - MySQLログ・スロークエリ: module24-log-analysis/lessons/lesson13-mysql-slow-query-logs.md
+  - ログローテーションと保持: module24-log-analysis/lessons/lesson14-log-rotation-retention.md
+  - ログのセキュリティと共有: module24-log-analysis/lessons/lesson15-security-masking-and-sharing.md
+  - 総合演習: module24-log-analysis/lessons/lesson16-capstone.md
+  - Lab01 500エラーを複数ログから追跡する: module24-log-analysis/labs/lab01-trace-http-500.md
+  - Lab02 504とスロークエリを切り分ける: module24-log-analysis/labs/lab02-timeout-and-slow-query.md
+  - Module24 Exercise Answers: module24-log-analysis/exercises/answers.md
+  - Module24 Beginner Exercises: module24-log-analysis/exercises/beginner.md
+  - Cheatsheet: module24-log-analysis/cheatsheet.md
+  - FAQ: module24-log-analysis/faq.md
+  - Troubleshooting: module24-log-analysis/troubleshooting.md
+  - Resources: module24-log-analysis/resources.md
+- Module25 実践デバッグ100本ノック:
+  - 概要: module25-debug-100-knocks/README.md
+  - Lesson01 再現条件と観測: module25-debug-100-knocks/lessons/lesson01-reproduction-and-observation.md
+  - Lesson02 HTTP・API: module25-debug-100-knocks/lessons/lesson02-http-and-api.md
+  - Lesson03 PHP・実行時エラー: module25-debug-100-knocks/lessons/lesson03-php-and-runtime.md
+  - Lesson04 データベース・SQL: module25-debug-100-knocks/lessons/lesson04-database-and-sql.md
+  - Lesson05 フロントエンド・JavaScript: module25-debug-100-knocks/lessons/lesson05-frontend-javascript.md
+  - Lesson06 Docker・環境: module25-debug-100-knocks/lessons/lesson06-docker-and-environment.md
+  - Lesson07 Git・デプロイ: module25-debug-100-knocks/lessons/lesson07-git-and-deployment.md
+  - Lesson08 ログ・監視: module25-debug-100-knocks/lessons/lesson08-logs-and-observability.md
+  - Lesson09 性能・競合: module25-debug-100-knocks/lessons/lesson09-performance-and-race-conditions.md
+  - Lesson10 総合障害対応: module25-debug-100-knocks/lessons/lesson10-incident-response.md
+  - Lab01 API障害調査: module25-debug-100-knocks/labs/lab01-api-incident.md
+  - Lab02 フルスタック障害調査: module25-debug-100-knocks/labs/lab02-fullstack-incident.md
+  - Answers: module25-debug-100-knocks/exercises/answers.md
+  - Beginner Exercises: module25-debug-100-knocks/exercises/beginner.md
+  - Cheatsheet: module25-debug-100-knocks/cheatsheet.md
+  - FAQ: module25-debug-100-knocks/faq.md
+  - Troubleshooting: module25-debug-100-knocks/troubleshooting.md
+  - Resources: module25-debug-100-knocks/resources.md
 - Module26 コマンドチートシート:
   - 概要: module26-command-cheatsheet/README.md
   - Lesson01 CLI・ファイル・テキスト操作: module26-command-cheatsheet/lessons/lesson01-cli-files-and-text.md
